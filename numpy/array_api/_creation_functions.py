@@ -73,10 +73,10 @@ def asarray(
 
 
 def arange(
-    start: Union[int, float],
+    start: Union[float, float],
     /,
-    stop: Optional[Union[int, float]] = None,
-    step: Union[int, float] = 1,
+    stop: Optional[Union[float, float]] = None,
+    step: Union[float, float] = 1,
     *,
     dtype: Optional[Dtype] = None,
     device: Optional[Device] = None,
