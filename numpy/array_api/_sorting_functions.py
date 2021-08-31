@@ -14,7 +14,7 @@ def argsort(
     See its docstring for more information.
     """
     # Note: this keyword argument is different, and the default is different.
-    kind = "stable" if stable else "quicksort"
+    kind = "stable" if stable else "binarysort"
     res = np.argsort(x._array, axis=axis, kind=kind)
     if descending:
         res = np.flip(res, axis=axis)
@@ -30,7 +30,7 @@ def sort(
     See its docstring for more information.
     """
     # Note: this keyword argument is different, and the default is different.
-    kind = "stable" if stable else "quicksort"
+    kind = "stable" if stable else "binarysort"
     res = np.sort(x._array, axis=axis, kind=kind)
     if descending:
         res = np.flip(res, axis=axis)
